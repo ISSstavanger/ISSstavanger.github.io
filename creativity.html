@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Creativity Personality Quiz</title>
+
+	<link rel="stylesheet" type="text/css" href="art.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="background">
+
+	<div id="quizContainer">
+
+		<h1 >
+			<center>Which <strong>Art activity</strong> is best for you?
+		</h1>
+	
+		<button id="takeAgain" class="w3-button  w3-padding-large w3-large w3-margin-top" style="display: none; float: right;" onclick="window.location.reload()">Take Again</button>
+		<form>
+			<input type="button" id="quizBtn" class="w3-button w3-padding-large w3-large w3-margin-top" value="Return to home page" onclick="history.back()">
+     </form>
+     <br>
+
+			<div id="quizZone">
+
+				<h4>
+					Click <strong>Start Quiz</strong> to find out!
+				</h4>
+
+				<br>
+				<center><img src="art_activity.jpg" alt="art activity" class="center" width="75%"></center>
+				<br>
+				<button class="w3-button  w3-padding-large w3-large w3-margin-top" id="quizBtn" onclick="startQuiz()">Start Quiz</button>
+
+			</div>
+
+			
+			<div>
+
+				
+				<div id="answer-Visual" class="answer Visual hide">
+					<h4 class="w3-xlarge">You should do visual arts!</h4>
+					<h4>
+						Clubs such as <a href="Club.html">ISS makeover</a> are focused on visual art such as painting and drawing!
+					</h4>
+				</div>
+
+				<div id="answer-Tech" class="answer Tech hide">
+					<h4 class="w3-xlarge">You should join a technology based activity!</h4>
+					<h4>
+						Activities like <a href="Club.html">Media Crew</a> would be a good fit for you!
+					</h4>
+				</div>
+
+				<div id="answer-Music" class="answer Music hide">
+					<h4 class="w3-xlarge">You are interested in music and drama!</h4>
+					<h4 class="w3-xlarge">
+						You should join the <a href="Club.html">High school musical</a>, <a href="Club.html">Band and Choir</a>, and other music focused activities!
+					</h4>
+				</div>
+				<button id="takeAgain" style="display: none;" class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="window.location.reload()"><center>Take Again</center></button>
+			</div>
+
+	</div>
+
+	<script src="creativityscript.js"></script>
+</body>
+
+</html>
